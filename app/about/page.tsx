@@ -1,3 +1,4 @@
+
 import GradientDiv from "@/src/components/Ads";
 import MediaCard from "@/src/components/Mediacard";
 import Testimonicard from "@/src/components/Testimonicard";
@@ -115,4 +116,4 @@ export default function about() {
       </div>
     </div>
   );
-}
+
