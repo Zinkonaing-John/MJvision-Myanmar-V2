@@ -1,9 +1,8 @@
-
-import GradientDiv from "@/src/components/Ads";
-import MediaCard from "@/src/components/Mediacard";
-import Testimonicard from "@/src/components/Testimonicard";
-import YouTubePlayer from "@/src/components/Video";
-import VideoPlayer from "@/src/components/Video";
+import GradientDiv from '@/src/components/Ads'
+import MediaCard from '@/src/components/Mediacard'
+import Testimonicard from '@/src/components/Testimonicard'
+import YouTubePlayer from '@/src/components/Video'
+import VideoPlayer from '@/src/components/Video'
 
 export default function about() {
   return (
@@ -111,9 +110,9 @@ export default function about() {
         <GradientDiv />
       </div>
       <div className="grid grid-cols-2 gap-3 mt-8 px-4">
-        <YouTubePlayer videoId={"4nI0J5PGtvk"} />
-        <YouTubePlayer videoId={"AmwX2-BIpRU"} />
+        <YouTubePlayer videoId={'4nI0J5PGtvk'} />
+        <YouTubePlayer videoId={'AmwX2-BIpRU'} />
       </div>
     </div>
-  );
-
+  )
+}
