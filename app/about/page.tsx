@@ -1,3 +1,10 @@
+import { NavBar } from '@/src/components/NavBar'
+
 export default function About() {
-  return <div className="text-lg">About Page</div>
+  return (
+    <div>
+      <NavBar />
+      <div className="text-lg">Helloe </div>
+    </div>
+  )
 }

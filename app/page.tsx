@@ -1,5 +1,6 @@
-import Image from 'next/image'
+import { Footer } from '@/src/components/Footer'
+import { NavBar } from '@/src/components/NavBar'
 
 export default function Home() {
-  return <h2>Hello</h2>
+  return <div className="bg-[#031142]"></div>
 }
