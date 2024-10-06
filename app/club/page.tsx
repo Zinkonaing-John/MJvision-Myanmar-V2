@@ -1,5 +1,3 @@
-import GradientDiv from "@/src/components/Ads";
-
 export default function Club() {
   return (
     <div className="px-[100px]">
@@ -113,5 +111,5 @@ export default function Club() {
       </div>
       <br />
     </div>
-  );
+  )
 }
