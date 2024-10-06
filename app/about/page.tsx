@@ -2,6 +2,7 @@ import GradientDiv from '@/src/components/Ads'
 import MediaCard from '@/src/components/Mediacard'
 import Testimonicard from '@/src/components/Testimonicard'
 import YouTubePlayer from '@/src/components/Video'
+import VideoPlayer from '@/src/components/Video'
 
 export default function about() {
   return (
