@@ -10,10 +10,10 @@ export const NavBar = () => {
         </Typography>
       </Link>
       <div className="flex  gap-10 text-[#fff]">
-        <Link href={''}>အိမ်</Link>
+        <Link href={'/'}>အိမ်</Link>
         <Link href={''}>အကြောင်း</Link>
         <Link href={'/departments'}>ဌာနများ</Link>
-        <Link href={''}>ကလပ်/လှုပ်ရှားမှုများ</Link>
+        <Link href={'/club'}>ကလပ်/လှုပ်ရှားမှုများ</Link>
         <Link href={''}>မေး/ဖြေ</Link>
         <Link href={''}>သတင်းအချက်အလက်</Link>
       </div>

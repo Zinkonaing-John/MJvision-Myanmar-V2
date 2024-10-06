@@ -2,11 +2,8 @@
 import TextField from '@mui/material/TextField'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import Link from 'next/link'
-import { useState } from 'react'
 import { Typography } from '@mui/material'
 export const Footer = () => {
-  const [msg, setMsg] = useState('')
-
   return (
     <div className="bg-[#efeef4] text-[#031142] px-8 py-10 w-full">
       <div className="grid grid-cols-12 ">
