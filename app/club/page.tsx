@@ -7,7 +7,7 @@ export default function Club() {
         <img src="images/banner.jpg" alt="banner" />
       </div>
       <br />
-      <div className="grid grid-cols-3 justify-center gap-4  bg-white z-0 rounded-lg shadow-md p-6">
+      <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
           <h1 className="text-[30px] text-orange-600 ">
             <b>ကော်ဖီကိုချစ်သူများအတွက် ကော်ဖီကလပ်</b>
@@ -32,7 +32,7 @@ export default function Club() {
       </div>
       <br />
 
-      <div className="grid grid-cols-3 justify-center  gap-4  bg-white z-0  rounded-lg shadow-md p-6">
+      <div className="grid grid-cols-3 justify-center">
         <div>
           <img src="images/ukelele.png" alt="ukelele-club" />
         </div>
@@ -53,7 +53,7 @@ export default function Club() {
         </div>
       </div>
       <br />
-      <div className="grid grid-cols-3 justify-center  gap-4  bg-white z-0  rounded-lg shadow-md p-6">
+      <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
           <h1 className="text-[30px] text-orange-600">
             <b>ကိုရီးယား TOPIKကလပ်</b>
@@ -79,7 +79,7 @@ export default function Club() {
         </div>
       </div>
       <br />
-      <div className="grid grid-cols-3 justify-center  gap-4  bg-white z-0  rounded-lg shadow-md p-6 ">
+      <div className="grid grid-cols-3 justify-center">
         <div>
           <img src="images/guitar.png" alt="guitar-club" />
         </div>
