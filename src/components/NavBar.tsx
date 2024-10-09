@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export const NavBar = () => {
   return (
-    <div className="flex items-center justify-between h-20 py-2 px-10 w-full sticky top-0 left-0">
+    <div className="flex items-center justify-between h-20 py-2 px-10 w-full sticky top-0 left-0 bg-slate-800">
       <Link href={'/'}>
-        <Typography variant={'h4'}>
+        <Typography variant={'h4'} className="text-[#fff]">
           VISI<b className="text-[#f8532e]">ON</b>
         </Typography>
       </Link>
