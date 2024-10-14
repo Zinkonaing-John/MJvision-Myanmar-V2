@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Typography } from '@mui/material'
 export const Footer = () => {
   return (
-    <div className="bg-[#efeef4] text-[#031142] px-8 py-10 w-full">
+    <div className="bg-slate-800 text-[#fff] px-8 py-10 w-full">
       <div className="grid grid-cols-12 ">
         <div className="col-span-4  flex flex-col gap-4">
           <span>အပ်ဒိတ်များကိုလက်ခံရရှိရန်</span>
@@ -16,8 +16,9 @@ export const Footer = () => {
             <TextField
               id="standard-basic"
               label="သင့်အီးမေးလ်လိပ်စာကို ထည့်ပါ။"
-              variant="standard"
-              className="w-[220px]"
+              variant={'outlined'}
+              className="w-[220px] "
+              color={'success'}
               //   onChange={(e) => {
               //     setMsg(e.target.value)
               //     console.log(e.target.value)
