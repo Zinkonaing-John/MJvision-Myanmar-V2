@@ -34,6 +34,7 @@ export default function about() {
         </div>
       </div>
       <br />
+
       <div className="grid grid-cols-3 justify-center">
         <div>
           <img src="images/2.jpg" alt="" />
