@@ -20,7 +20,7 @@ import MediaCard from "@/src/components/Mediacard";
 import Image from "next/image";
 import Link from "next/link";
 export default function Page() {
-  let id = 5;
+  const id = 5;
 
   return (
     <div className="px-20">

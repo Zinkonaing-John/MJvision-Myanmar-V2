@@ -36,12 +36,7 @@ function handleClick(event: React.MouseEvent<Element, MouseEvent>) {
 }
 
 export default function CustomizedBreadcrumbs() {
-  function handleClose(
-    event: {},
-    reason: "backdropClick" | "escapeKeyDown"
-  ): void {
-    throw new Error("Function not implemented.");
-  }
+  
 
   return (
     <div role="presentation">
