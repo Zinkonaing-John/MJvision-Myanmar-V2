@@ -9,10 +9,10 @@ export default function CilvilEngineering() {
       <br />
       <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
-          <img src="images/taekwondo.jpg" alt="taekwondo" />
+          <img src="images/cilvilengineering2.jpg" alt="taekwondo" />
         </div>
         <div className="flex flex-col justify-between">
-          <div>
+          <div className="ml-10">
             <p className="text-[15px]">July 28, 2024 </p>
             <h1 className="text-[30px]">
               <b>Cadastre & Civil Engineering</b>
@@ -21,12 +21,12 @@ export default function CilvilEngineering() {
               <b>Dept. of Cadastre & Civil Engineering</b>
             </h2>
           </div>
-          <div>
+          {/* <div>
             <p className="text-[15px] text-gray">Written by:</p>
             <p>
               <b>Joshua La Seng</b>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <br />
@@ -44,7 +44,7 @@ export default function CilvilEngineering() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept. of Cadastre & Civil Engineering
             </h1>
@@ -77,6 +77,20 @@ export default function CilvilEngineering() {
               တိုးတက်လာခဲ့ပါသည်။
             </p>
             <br />
+            <div className="flex gap-6">
+              <img
+                src="images/cilvilengineering1.jpg"
+                alt="beauty5"
+                width={350}
+                height={200}
+              />
+              <img
+                src="images/cilvilengineering3.jpg"
+                alt="beauty3"
+                width={350}
+                height={200}
+              />
+            </div>
             <h1 className="text-[30px]">ရရှိနိုင်သော ကျွမ်းကျင်လိုင်စင်များ</h1>
             <br />
             <p></p>
@@ -85,23 +99,25 @@ export default function CilvilEngineering() {
         </div>
       </div>
       <br />
+      <hr style={{ border: "1px solid black", margin: "20px 0" }} />
       <div className="grid grid-cols-3">
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          img={"images/childwelfare1.jpg"}
+          title={"ကလေးသူငယ်ဆိုင်ရာ လူမှုဖူလုံရေးဌာ"}
+          paragraph={"Rearch date: 2024.10.12"}
         />
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          img={"images/automobile2.jpg"}
+          title={"အော်တိုမိုဘိုင်းအင်ဂျင်နီယာဌာန"}
+          paragraph={"Rearch date: 2024.10.12"}
         />
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          img={"images/media3.jpg"}
+          title={"အသံလွှင့်ခြင်းနှင့် ဗျူဟာဒီဇိုင်းဌာန"}
+          paragraph={"Rearch date: 2024.10.12"}
         />
       </div>
+      <br />
     </div>
   );
 }

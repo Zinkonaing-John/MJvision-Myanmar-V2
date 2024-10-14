@@ -44,7 +44,7 @@ export default function Electricity() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">Dept. of Electricity(လျှပ်စစ်ဌာန)</h1>
             <br />
             <p>
@@ -83,17 +83,17 @@ export default function Electricity() {
               အခြားသော စက်မှုလုပ်ငန်းများ၊ ကာကွယ်ရေး ကန်ထရိုက်တာများ
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/ep1.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/ep4.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>

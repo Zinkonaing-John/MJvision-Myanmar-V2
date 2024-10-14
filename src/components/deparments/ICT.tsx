@@ -44,7 +44,7 @@ export default function ICT() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept. of International Cooperation and Technology
             </h1>
@@ -81,17 +81,17 @@ export default function ICT() {
               (TOEIC၊ HSK၊ TOPIK)
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/ICT2.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/ICT3.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>

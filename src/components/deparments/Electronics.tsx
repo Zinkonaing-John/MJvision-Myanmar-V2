@@ -44,7 +44,7 @@ export default function Electronics() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept. of Electronics (အီလက်ထရွန်နစ်ဌာန)
             </h1>
@@ -94,17 +94,17 @@ export default function Electronics() {
               ရုံးအလိုအလျောက်စနစ် အင်ဂျင်နီယာ၊ အင်တာနက်ရှာဖွေသူ။
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/electronics4.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={150}
               />
               <img
                 src="images/electronics3.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={150}
               />
             </div>

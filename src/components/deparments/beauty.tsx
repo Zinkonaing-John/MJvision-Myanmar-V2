@@ -45,7 +45,7 @@ export default function Beauty() {
             <br />
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept. of Beauty Health (ကျန်းမာရေး အလှအပ ဌာန)
             </h1>
@@ -88,17 +88,17 @@ export default function Beauty() {
             </p>
 
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/beauty5.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/beauty3.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>
@@ -112,17 +112,17 @@ export default function Beauty() {
         <MediaCard
           img={"images/taekwondo.jpg"}
           title={"တိုက်ကွမ်ဒိုနှင့် ကာယပညာဦးစီးဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          paragraph={"Research date : 2024.10.12"}
         />
         <MediaCard
           img={"images/ECE4.jpg"}
           title={"ရှေးဦးကလေးဘဝပညာရေးဌာ"}
-          paragraph={"Rearcher: Htoi Bu"}
+          paragraph={"Research date : 2024.10.12"}
         />
         <MediaCard
           img={"images/renewable2.jpg"}
           title={"အသစ်နှင့် ပြန်လည်အသုံးချနိုင်သော စွမ်းအင်ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          paragraph={"Research date : 2024.10.12"}
         />
       </div>
       <br />

@@ -9,10 +9,10 @@ export default function Architecture() {
       <br />
       <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
-          <img src="images/taekwondo.jpg" alt="taekwondo" />
+          <img src="images/architecture1.jpg" alt="architecture1" />
         </div>
         <div className="flex flex-col justify-between">
-          <div>
+          <div className="ml-10">
             <p className="text-[15px]">July 28, 2024 </p>
             <h1 className="text-[30px]">
               <b>Architecture</b>
@@ -21,12 +21,12 @@ export default function Architecture() {
               <b>Dept. of Architecture</b>
             </h2>
           </div>
-          <div>
+          {/* <div>
             <p className="text-[15px] text-gray">Written by:</p>
             <p>
               <b>Joshua La Seng</b>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <br />
@@ -44,7 +44,7 @@ export default function Architecture() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">Dept. of Architecture</h1>
             <br />
             <p>
@@ -81,27 +81,43 @@ export default function Architecture() {
               (အင်ဂျင်နီယာ) အင်ဂျင်နီယာစသည်တို့။
             </p>
             <br />
+            <div className="flex gap-6">
+              <img
+                src="images/architecture2.jpg"
+                alt="architecture2"
+                width={350}
+                height={200}
+              />
+              <img
+                src="images/architecture4.jpg"
+                alt="architecture4"
+                width={350}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
       <br />
+      <hr style={{ border: "1px solid black", margin: "20px 0" }} />
       <div className="grid grid-cols-3">
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
+          img={"images/ICT4.jpg"}
+          title={"International Cooperation and Technology"}
           paragraph={"Rearcher: Htoi Bu"}
         />
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
+          img={"images/electronics2.jpg"}
+          title={"အီလက်ထရွန်နစ်ဌာန"}
           paragraph={"Rearcher: Htoi Bu"}
         />
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
+          img={"images/renewable3.jpg"}
+          title={"အသစ်နှင့် ပြန်လည်အသုံးချနိုင်သော စွမ်းအင်ဌာန"}
           paragraph={"Rearcher: Htoi Bu"}
         />
       </div>
+      <br />
     </div>
   );
 }

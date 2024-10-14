@@ -44,7 +44,7 @@ export default function Mechanics() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept.of Mechanics(စက်မှုအင်ဂျင်နီယာဌာန)
             </h1>
@@ -96,17 +96,17 @@ export default function Mechanics() {
               <li>ပုံမှန်စက်မှုအင်ဂျင်နီယာ</li>
             </ul>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/mechanic1.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/mechanic4.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>

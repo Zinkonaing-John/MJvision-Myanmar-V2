@@ -9,10 +9,10 @@ export default function SocialWelfare() {
       <br />
       <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
-          <img src="images/taekwondo.jpg" alt="taekwondo" />
+          <img src="images/socialwelfare3.jpg" alt="socialwelfare3" />
         </div>
         <div className="flex flex-col justify-between">
-          <div>
+          <div className="ml-10">
             <p className="text-[15px]">July 28, 2024 </p>
             <h1 className="text-[30px]">
               <b>လူမှုဝန်ထမ်းစီမံခန့်ခွဲမှုဌာ</b>
@@ -21,12 +21,12 @@ export default function SocialWelfare() {
               <b>Dept. of Social Welfare Management(</b>
             </h2>
           </div>
-          <div>
+          {/* <div>
             <p className="text-[15px] text-gray">Written by:</p>
             <p>
               <b>Nu Nu Seng Mai</b>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <br />
@@ -44,7 +44,7 @@ export default function SocialWelfare() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept. of Social Welfare Management(လူမှုဝန်ထမ်းစီမံခန့်ခွဲမှုဌာန)
             </h1>
@@ -78,27 +78,43 @@ export default function SocialWelfare() {
               စောင့်ရှောက်မှု class 2
             </p>
             <br />
+            <div className="flex gap-6">
+              <img
+                src="images/socialwelfare1.jpg"
+                alt="socialwelfare1"
+                width={350}
+                height={200}
+              />
+              <img
+                src="images/socialwelfare2.jpg"
+                alt="socialwelfare2"
+                width={350}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
       <br />
+      <hr style={{ border: "1px solid black", margin: "20px 0" }} />
       <div className="grid grid-cols-3">
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          img={"images/taekwondo2.jpg"}
+          title={"တိုက်ကွမ်ဒိုနှင့် ကာယပညာဦးစီးဌာန"}
+          paragraph={"Research date : 2024.10.12"}
+        />
+        <MediaCard
+          img={"images/mechanic1.jpg"}
+          title={"စက်မှုအင်ဂျင်နီယာဌာန"}
+          paragraph={"Research date : 2024.10.12"}
         />
         <MediaCard
           img={"images/beauty.jpg"}
           title={"ကျန်းမာရေး အလှအပ ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
-        />
-        <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
-          paragraph={"Rearcher: Htoi Bu"}
+          paragraph={"Research date : 2024.10.12"}
         />
       </div>
+      <br />
     </div>
   );
 }

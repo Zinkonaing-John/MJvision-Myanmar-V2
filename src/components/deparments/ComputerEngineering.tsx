@@ -13,7 +13,7 @@ export default function ComputerEngineering() {
         </div>
         <div className="flex flex-col justify-between">
           <div className="ml-10">
-            <p className="text-[15px]">July 28, 2024 </p>
+            <p className="text-[15px]">July 28, 2024</p>
             <h1 className="text-[30px]">
               <b>Computer Engineering</b>
             </h1>
@@ -44,7 +44,7 @@ export default function ComputerEngineering() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">Dept. of Computer Engineering</h1>
             <br />
             <p>
@@ -92,17 +92,17 @@ export default function ComputerEngineering() {
               နည်းပြဆရာ၊
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/code2.jpg"
                 alt="Coder"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/code3.jpg"
                 alt="neworking"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>

@@ -44,7 +44,7 @@ export default function Taekwondo() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept. of Taekwondo and Physical Education(တိုက်ကွမ်ဒိုနှင့်
               ကာယပညာဦးစီးဌာန)
@@ -101,17 +101,17 @@ export default function Taekwondo() {
               အစောင့်နည်းပြ၊ ဂေါက်သီးနည်းပြ စသဖြင့် လိုင်စင်များ ရရှိနိုင်ပါသည်။
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/taekwondo2.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/taekwondo3.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>

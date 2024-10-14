@@ -44,7 +44,7 @@ export default function ITCovergence() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">Dept. of IT convergence system</h1>
             <br />
             <p>
@@ -92,17 +92,17 @@ export default function ITCovergence() {
               Computerized Accounting Manager
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/ITconvergence2.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/ITconvergence3.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>

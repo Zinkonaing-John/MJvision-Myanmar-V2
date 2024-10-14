@@ -9,10 +9,10 @@ export default function Broadcasting() {
       <br />
       <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
-          <img src="images/taekwondo.jpg" alt="taekwondo" />
+          <img src="images/media4.jpg" alt="media4" />
         </div>
         <div className="flex flex-col justify-between">
-          <div>
+          <div className="ml-10">
             <p className="text-[15px]">July 28, 2024 </p>
             <h1 className="text-[30px]">
               <b>အသံလွှင့်ခြင်းနှင့် ဗျူဟာဒီဇိုင်းဌာန</b>
@@ -24,16 +24,15 @@ export default function Broadcasting() {
               </b>
             </h2>
           </div>
-          <div>
+          {/* <div>
             <p className="text-[15px] text-gray">Written by:</p>
             <p>
               <b>Joshua La Seng</b>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <br />
-
       <div>
         <div className="grid grid-cols-3 justify-center">
           <div>
@@ -47,7 +46,7 @@ export default function Broadcasting() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept.of Broadcasting & Visual Design(အသံလွှင့်ခြင်းနှင့်
               ဗျူဟာဒီဇိုင်းဌာန)
@@ -113,10 +112,25 @@ export default function Broadcasting() {
               <li>ဝက်ဘ်ဒီဇိုင်နာ</li>
             </ul>
             <br />
+            <div className="flex gap-6">
+              <img
+                src="images/media2.jpg"
+                alt="media2"
+                width={350}
+                height={200}
+              />
+              <img
+                src="images/media3.jpg"
+                alt="media3"
+                width={350}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
       <br />
+      <hr style={{ border: "1px solid black", margin: "20px 0" }} />
       <div className="grid grid-cols-3">
         <MediaCard
           img={"images/beauty.jpg"}
@@ -124,16 +138,17 @@ export default function Broadcasting() {
           paragraph={"Rearcher: Htoi Bu"}
         />
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
+          img={"images/ECE1.jpg"}
+          title={"ရှေးဦးကလေးဘဝပညာရေးဌာ"}
           paragraph={"Rearcher: Htoi Bu"}
         />
         <MediaCard
-          img={"images/beauty.jpg"}
-          title={"ကျန်းမာရေး အလှအပ ဌာန"}
+          img={"images/renewable1.jpg"}
+          title={"အသစ်နှင့် ပြန်လည်အသုံးချနိုင်သော စွမ်းအင်ဌာန"}
           paragraph={"Rearcher: Htoi Bu"}
         />
       </div>
+      <br />\
     </div>
   );
 }

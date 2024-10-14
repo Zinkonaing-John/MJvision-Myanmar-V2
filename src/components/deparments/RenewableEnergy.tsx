@@ -47,7 +47,7 @@ export default function RenewableEnergy() {
             </ul>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 text-justify">
             <h1 className="text-[30px]">
               Dept.of New & Renewable Energy(အသစ်နှင့် ပြန်လည်အသုံးချနိုင်သော
               စွမ်းအင်ဌာန)
@@ -101,17 +101,17 @@ export default function RenewableEnergy() {
               <li>အထက်တန်းကျောင်းဆရာ</li>
             </ul>
             <br />
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <img
                 src="images/renewable4.jpg"
                 alt="beauty5"
-                width={400}
+                width={350}
                 height={200}
               />
               <img
                 src="images/renewable3.jpg"
                 alt="beauty3"
-                width={400}
+                width={350}
                 height={200}
               />
             </div>
