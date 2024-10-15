@@ -15,10 +15,10 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'VISION',
-  description:
-    'School Website of Vision College of Jeonju for Myanmar Students',
-}
+
+  title: 'MJVISION',
+  description: 'This website is for Myanmar Students of Vision College of Jeonju',
+
 
 export default function RootLayout({
   children,
