@@ -64,7 +64,15 @@ export const Footer = () => {
             VISI<b className="text-[#f8532e]">ON</b>
           </Typography>
         </Link>
-        <Typography>College of Jeonju</Typography>
+        <div className="flex justify-between items-center mt-1 w-[250px]">
+          <Typography className="text-sm">College of Jeonju</Typography>
+          <div
+            className={'h-4 bg-[#1d21a6] w-[2px]'}
+            role="separator"
+            aria-orientation="vertical"
+          />
+          <Typography className="text-sm">전주비전대학교</Typography>
+        </div>
       </div>
     </div>
   )
