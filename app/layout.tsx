@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: 'MJVISION',
   description: 'This website is for Myanmar Students of Vision College of Jeonju',
 
-
+}
 export default function RootLayout({
   children,
 }: Readonly<{
