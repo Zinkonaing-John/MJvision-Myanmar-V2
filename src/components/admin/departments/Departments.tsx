@@ -9,7 +9,7 @@ export const Departments = () => {
   return (
     <div className="w-full">
       <button
-        className="border p-2 rounded-md bg-slate-500 text-white"
+        className="border p-2 rounded-md bg-slate-500 text-white cursor-pointer"
         onClick={() => setShowForm(!showForm)}
       >
         {showForm ? (
