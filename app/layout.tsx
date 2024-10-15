@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import './globals.css'
-import { NavBar } from '@/src/components/NavBar'
-import { Footer } from '@/src/components/Footer'
+import '@/app/globals.css'
+import ContionalLayout from './contionalLayout'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -16,9 +15,10 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
+
   title: 'MJVISION',
   description: 'This website is for Myanmar Students of Vision College of Jeonju',
-}
+
 
 export default function RootLayout({
   children,
@@ -27,16 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <title>VISION</title>
-      </head>
+      <head></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavBar />
-
-        {children}
-        <Footer />
+        <ContionalLayout>{children}</ContionalLayout>
       </body>
     </html>
   )
