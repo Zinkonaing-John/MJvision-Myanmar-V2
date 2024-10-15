@@ -27,10 +27,11 @@ export default function Page() {
       <br />
       <div className="grid grid-cols-3">
         <div className="col-span-2">
-          <img
-            src="images/departments4.jpg"
+          <Image
+            src="/images/departments4.jpg"
             alt=""
             width={700}
+            height={500}
             className="h-200"
           />
         </div>
