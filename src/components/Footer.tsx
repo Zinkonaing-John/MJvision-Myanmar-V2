@@ -10,21 +10,21 @@ export const Footer = () => {
         <div className="col-span-4  flex flex-col gap-4">
           <span>အပ်ဒိတ်များကိုလက်ခံရရှိရန်</span>
           <div
-            className="border-[1px] border-[#031142] rounded-md
+            className="border-[1px] border-[#fff] rounded-md
            p-2 w-[280px] flex justify-between items-center"
           >
             <TextField
               id="standard-basic"
               label="သင့်အီးမေးလ်လိပ်စာကို ထည့်ပါ။"
-              variant={'outlined'}
-              className="w-[220px] "
+              variant={'standard'}
+              className="w-[220px]"
               color={'success'}
               //   onChange={(e) => {
               //     setMsg(e.target.value)
               //     console.log(e.target.value)
               //   }}
             />
-            <Link href={''}>
+            <Link href={'#'}>
               <ArrowForwardIcon />
             </Link>
           </div>
@@ -32,10 +32,10 @@ export const Footer = () => {
         <div className="col-span-2">
           <span className="text-lg">အကြောင်းအရာများ</span>
           <div className="flex flex-col mt-8 gap-2">
-            <Link href={''}>အိမ်</Link>
-            <Link href={''}>အကြောင်း</Link>
-            <Link href={''}>ဌာနများ</Link>
-            <Link href={''}>ကလပ်/လှုပ်ရှားမှုများ</Link>
+            <Link href={'/'}>အိမ်</Link>
+            <Link href={'/about'}>အကြောင်း</Link>
+            <Link href={'/departments'}>ဌာနများ</Link>
+            <Link href={'/club'}>ကလပ်/လှုပ်ရှားမှုများ</Link>
             <Link href={''}>မေး/ဖြေ</Link>
             <Link href={''}>သတင်းအချက်အလက်</Link>
           </div>
@@ -68,7 +68,7 @@ export const Footer = () => {
         <div className="flex justify-between items-center mt-1 w-[250px]">
           <Typography className="text-sm">College of Jeonju</Typography>
           <div
-            className={'h-4 bg-[#1d21a6] w-[2px]'}
+            className={'h-4 bg-[#fff] w-[2px]'}
             role="separator"
             aria-orientation="vertical"
           />

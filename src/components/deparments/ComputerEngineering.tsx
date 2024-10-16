@@ -9,7 +9,7 @@ export default function ComputerEngineering() {
       <br />
       <div className="grid grid-cols-3 justify-center">
         <div className="col-span-2">
-          <img src="images/code1.jpg" alt="taekwondo" />
+          <img src="/images/code1.jpg" alt="taekwondo" />
         </div>
         <div className="flex flex-col justify-between">
           <div className="ml-10">
@@ -94,13 +94,13 @@ export default function ComputerEngineering() {
             <br />
             <div className="flex gap-6">
               <img
-                src="images/code2.jpg"
+                src="/images/code2.jpg"
                 alt="Coder"
                 width={350}
                 height={200}
               />
               <img
-                src="images/code3.jpg"
+                src="/images/code3.jpg"
                 alt="neworking"
                 width={350}
                 height={200}
