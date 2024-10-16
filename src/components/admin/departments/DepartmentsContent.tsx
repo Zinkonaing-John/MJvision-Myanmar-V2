@@ -1,3 +1,4 @@
+import { supabase } from '@/src/lib/supabaseClient'
 import { useEffect, useState } from 'react'
 
 // Define the types for a department
@@ -34,6 +35,15 @@ export function DepartmentsContent() {
 
     fetchDepartments()
   }, [])
+
+  const handleDeleteDept = async(id:number) => {
+
+    await fetch(`/api/delete-dept?id=${id}`, {
+      method:'DELETE',
+      
+    })
+
+  }
 
   // Handle loading state
   if (loading) {
@@ -74,7 +84,7 @@ export function DepartmentsContent() {
             <div className="flex space-x-2 justify-end">
               <button
                 className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 text-sm"
-                onClick={() => alert(`Delete ${department.name}`)} // Placeholder for delete functionality
+                onClick={()=>handleDeleteDept(department.id)} // Placeholder for delete functionality
               >
                 Delete
               </button>
