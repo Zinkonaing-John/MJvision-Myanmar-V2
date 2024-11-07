@@ -1,3 +1,5 @@
+import CardSlider from "@/src/components/SliderCard";
+
 export default function Club() {
   return (
     <div className="px-[100px]">
@@ -115,6 +117,7 @@ export default function Club() {
           className="rounded-lg"
         />
       </div> */}
+
       <br />
     </div>
   );
