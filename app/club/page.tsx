@@ -1,4 +1,6 @@
+
 import CardSlider from "@/src/components/SliderCard";
+
 
 export default function Club() {
   return (
@@ -109,6 +111,7 @@ export default function Club() {
       </div>
       <hr style={{ border: "1px solid black", margin: "20px 0" }} />
       <br />
+
       {/* <div className=" rounded-lg shadow-md">
         <img
           src="images/club-banner.png"
