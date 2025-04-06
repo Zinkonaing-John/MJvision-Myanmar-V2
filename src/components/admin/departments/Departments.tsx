@@ -6,6 +6,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 
 export const Departments = () => {
   const [showForm, setShowForm] = useState<boolean>(false)
+  const [refreshKey, setRefreshKey] = useState(0);
   return (
     <div className="w-full">
       <button
@@ -21,7 +22,7 @@ export const Departments = () => {
         )}
       </button>
 
-      {showForm ? <AddDeptForm /> : <DepartmentsContent />}
+      {showForm ? <AddDeptForm /> : <DepartmentsContent key={refreshKey}/>}
     </div>
   )
 }

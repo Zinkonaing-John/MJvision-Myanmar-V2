@@ -1,7 +1,6 @@
-"use client";
-import CardSwiper from "@/src/components/Mediacard";
+
 import CardSlider from "@/src/components/SliderCard";
-import App from "next/app";
+
 
 export default function Club() {
   return (

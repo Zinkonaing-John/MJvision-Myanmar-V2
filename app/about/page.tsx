@@ -1,7 +1,8 @@
-import GradientDiv from '@/src/components/Ads'
-import MediaCard from '@/src/components/Mediacard'
-import Testimonicard from '@/src/components/Testimonicard'
-import YouTubePlayer from '@/src/components/Video'
+import GradientDiv from "@/src/components/Ads";
+import MediaCard from "@/src/components/Mediacard";
+import CardSlider from "@/src/components/SliderCard";
+import Testimonicard from "@/src/components/Testimonicard";
+import YouTubePlayer from "@/src/components/Video";
 
 export default function about() {
   return (
@@ -72,28 +73,7 @@ export default function about() {
         </p>
       </div>
       <br />
-      <div className="flex gap-4 px-4 mt-3">
-        <MediaCard
-          img="images/learn-together.jpeg"
-          title="အတူလေ့လာပါ။"
-          paragraph="အတူတကွ သင်ယူသော အသိုင်းအဝိုင်းသည် အတူတကွ ထူးချွန်ကြသည်။ အတူတကွ သင်ယူနိုင်တဲ့ အသိုက်အဝန်းတစ်ခု ဖွဲ့ဖို့ လိုပါတယ်။"
-        />
-        <MediaCard
-          img="images/hard.jpeg"
-          title="ကြိုးစားလေ့လာ"
-          paragraph="သင့်အနာဂတ်ကို ကြိုတင်ခန့်မှန်းရန် အကောင်းဆုံးနည်းလမ်းမှာ ၎င်းကို ကိုယ်တိုင်ဖန်တီးရန်ဖြစ်သည်။"
-        />
-        <MediaCard
-          img="images/thinking.jpg"
-          title="တွေးခေါ်"
-          paragraph="အကောင်းမြင်စိတ်က သင့်ကို အဆိုးမြင်စိတ်ထက် အရာရာကို ပိုကောင်းအောင်လုပ်နိုင်စေတယ်။"
-        />
-        <MediaCard
-          img="images/progress.jpeg"
-          title="တိုးတက်မှု"
-          paragraph="အချိန်ကြာလာသည်နှင့်အမျှ နေ့စဉ်တိုးတက်မှုအနည်းငယ်သည် အံ့မခန်းရလဒ်များကို ဖြစ်ပေါ်စေသည်။"
-        />
-      </div>
+      <CardSlider />
       <br />
       <div className="px-4">
         <GradientDiv />
@@ -110,9 +90,9 @@ export default function about() {
         <GradientDiv />
       </div>
       <div className="grid grid-cols-2 gap-3 mt-8 px-4">
-        <YouTubePlayer videoId={'4nI0J5PGtvk'} />
-        <YouTubePlayer videoId={'AmwX2-BIpRU'} />
+        <YouTubePlayer videoId={"4nI0J5PGtvk"} />
+        <YouTubePlayer videoId={"AmwX2-BIpRU"} />
       </div>
     </div>
-  )
+  );
 }

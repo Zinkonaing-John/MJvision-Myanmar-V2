@@ -1,153 +1,90 @@
 "use client";
-import React, { useEffect } from "react";
-import Swiper from "swiper";
-import "swiper/swiper-bundle.min.css"; // Import Swiper styles
-import styled from "styled-components";
 
-// Define styled-components
-const Section = styled.section`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
-const Wrapper = styled.div`
-  width: 100%;
-  height: 35em;
-  display: flex;
-  align-items: center;
-`;
-
-const Card = styled.div`
-  width: 20em;
-  height: 90%;
-  background-color: #fff;
-  border-radius: 2em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
-  padding: 2em 1em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 2em;
-`;
-
-const CardImage = styled.div`
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  border: 5px solid #9176ff;
-  padding: 3px;
-  margin-bottom: 2em;
-`;
-
-const CardContent = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const CardTitle = styled.span`
-  font-size: 1.5rem;
-  font-weight: 500;
-  position: relative;
-  top: 0.2em;
-`;
-
-const CardName = styled.span`
-  color: #9176ff;
-`;
-
-const CardText = styled.p`
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 1em 0;
-`;
-
-const CardButton = styled.button`
-  background-color: #9176ff;
-  color: #fff;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: none;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  margin-top: 0.5em;
-  cursor: pointer;
-`;
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
 
 interface CardProps {
-  image: string;
   title: string;
   name: string;
+  image: string;
   description: string;
 }
 
-const CardItem: React.FC<CardProps> = ({ image, title, name, description }) => (
-  <Card className="swiper-slide">
-    <CardImage>
-      <img src={image} alt="card image" />
-    </CardImage>
-
-    <CardContent>
-      <CardTitle>{title}</CardTitle>
-      <CardName>{name}</CardName>
-      <CardText>{description}</CardText>
-      <CardButton>View More</CardButton>
-    </CardContent>
-  </Card>
-);
+const cards: CardProps[] = [
+  {
+    title: "Web Designer",
+    name: "Vanessa Martinez",
+    image: "/images/user1.jpg",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    title: "UI Designer",
+    name: "Sarah Bowen",
+    image: "/images/user2.jpg",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    title: "Web Developer",
+    name: "David Murphy",
+    image: "/images/user3.jpg",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    title: "Mobile Designer",
+    name: "Kelsey West",
+    image: "/images/user4.jpg",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+];
 
 const CardSlider: React.FC = () => {
-  useEffect(() => {
-    new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  }, []);
-
   return (
-    <Section className="swiper mySwiper">
-      <Wrapper className="swiper-wrapper">
-        <CardItem
-          image="images/user1.jpg"
-          title="Web Designer"
-          name="Vanessa Martinez"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum"
-        />
-        <CardItem
-          image="images/user2.jpg"
-          title="UI Designer"
-          name="Sarah Bowen"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum"
-        />
-        <CardItem
-          image="images/user3.jpg"
-          title="Web Developer"
-          name="David Murphy"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum"
-        />
-        <CardItem
-          image="images/user4.jpg"
-          title="Mobile Designer"
-          name="Kelsey West"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum"
-        />
-      </Wrapper>
-    </Section>
+    <div className="pt-20 flex justify-center items-center h-[80vh] bg-gray-100">
+      {" "}
+      {/* Added padding-top */}
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        slidesPerView={3} // Display 3 slides at once
+        centeredSlides={false} // Disable centered slides
+        spaceBetween={10} // Reduce spacing between slides
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        }}
+      >
+        {cards.map((card, index) => (
+          <SwiperSlide key={index} className="flex justify-center">
+            <div className="w-72 h-[80%] bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center m-2">
+              <div className="w-36 h-36 rounded-full border-4 border-purple-500 mb-4">
+                <img
+                  src={card.image}
+                  alt="card image"
+                  className="w-full h-full rounded-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-lg font-medium">{card.title}</h3>
+                <span className="text-purple-500">{card.name}</span>
+                <p className="text-center text-base mt-3 text-gray-600">
+                  {card.description}
+                </p>
+                <button className="bg-purple-500 text-white text-sm font-semibold uppercase px-4 py-2 rounded mt-3">
+                  View More
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+
   );
 };
 
