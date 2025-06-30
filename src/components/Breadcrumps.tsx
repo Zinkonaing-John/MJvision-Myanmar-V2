@@ -4,11 +4,7 @@ import { emphasize, styled } from "@mui/material/styles";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Chip from "@mui/material/Chip";
 import HomeIcon from "@mui/icons-material/Home";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
-import { Menu, MenuItem } from "@mui/material";
-import Drawer from "./Drawer";
-import AnchorTemporaryDrawer from "./Drawer";
 
 const StyledBreadcrumb = styled(Chip)(({ theme }) => {
   const backgroundColor =
@@ -28,28 +24,22 @@ const StyledBreadcrumb = styled(Chip)(({ theme }) => {
       backgroundColor: emphasize(backgroundColor, 0.12),
     },
   };
-}) as typeof Chip; // TypeScript only: need a type cast here because https://github.com/Microsoft/TypeScript/issues/26591
-
-function handleClick(event: React.MouseEvent<Element, MouseEvent>) {
-  event.preventDefault();
-  alert("You clicked!");
-}
+}) as typeof Chip;
 
 export default function CustomizedBreadcrumbs() {
-  
-
   return (
     <div role="presentation">
       <Breadcrumbs aria-label="breadcrumb">
-        <Link href={"/"}>
+        <Link href="/" passHref legacyBehavior>
           <StyledBreadcrumb
             component="a"
             label="Home"
             icon={<HomeIcon fontSize="small" />}
           />
         </Link>
-        <StyledBreadcrumb component="a" href="#" label="Deparments" />
-        <AnchorTemporaryDrawer />
+        <Link href="/departments" passHref legacyBehavior>
+          <StyledBreadcrumb component="a" label="Departments" />
+        </Link>
       </Breadcrumbs>
     </div>
   );

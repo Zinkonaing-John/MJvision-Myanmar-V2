@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export const NavBar = () => {
   return (
-    <div className="flex items-center justify-between h-20 py-2 px-10 w-full sticky top-0 left-0 bg-slate-800">
+    <div className="flex items-center justify-between h-20 py-2 px-10 w-full sticky top-0 left-0 bg-slate-800 z-50">
       <Link href={"/"}>
         <Typography variant={"h4"} className="text-[#fff]">
           VISI<b className="text-[#f8532e]">ON</b>
         </Typography>
       </Link>
-      <div className="flex  gap-10 text-[#fff]">
+      <div className="flex gap-10 text-[#fff] items-center">
         <Link className="py-4" href={"/"}>
           အိမ်
         </Link>
@@ -22,11 +22,8 @@ export const NavBar = () => {
         <Link className="py-4" href={"/club"}>
           ကလပ်/လှုပ်ရှားမှုများ
         </Link>
-        <Link className="py-4" href={""}>
+        <Link className="py-4" href={"/Q&A"}>
           မေး/ဖြေ
-        </Link>
-        <Link className="py-4" href={""}>
-          သတင်းအချက်အလက်
         </Link>
       </div>
     </div>

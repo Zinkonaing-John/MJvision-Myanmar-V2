@@ -1,8 +1,8 @@
-'use client'
-import TextField from '@mui/material/TextField'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import Link from 'next/link'
-import { Typography } from '@mui/material'
+"use client";
+import TextField from "@mui/material/TextField";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Link from "next/link";
+import { Typography } from "@mui/material";
 export const Footer = () => {
   return (
     <div className="bg-slate-800 text-[#fff] px-8 py-10 w-full">
@@ -16,15 +16,15 @@ export const Footer = () => {
             <TextField
               id="standard-basic"
               label="သင့်အီးမေးလ်လိပ်စာကို ထည့်ပါ။"
-              variant={'standard'}
+              variant={"standard"}
               className="w-[220px]"
-              color={'success'}
+              color={"success"}
               //   onChange={(e) => {
               //     setMsg(e.target.value)
               //     console.log(e.target.value)
               //   }}
             />
-            <Link href={'#'}>
+            <Link href={"#"}>
               <ArrowForwardIcon />
             </Link>
           </div>
@@ -32,43 +32,43 @@ export const Footer = () => {
         <div className="col-span-2">
           <span className="text-lg">အကြောင်းအရာများ</span>
           <div className="flex flex-col mt-8 gap-2">
-            <Link href={'/'}>အိမ်</Link>
-            <Link href={'/about'}>အကြောင်း</Link>
-            <Link href={'/departments'}>ဌာနများ</Link>
-            <Link href={'/club'}>ကလပ်/လှုပ်ရှားမှုများ</Link>
-            <Link href={''}>မေး/ဖြေ</Link>
-            <Link href={''}>သတင်းအချက်အလက်</Link>
+            <Link href={"/"}>အိမ်</Link>
+            <Link href={"/about"}>အကြောင်း</Link>
+            <Link href={"/departments"}>ဌာနများ</Link>
+            <Link href={"/club"}>ကလပ်/လှုပ်ရှားမှုများ</Link>
+            <Link href={""}>မေး/ဖြေ</Link>
+            <Link href={""}>သတင်းအချက်အလက်</Link>
           </div>
         </div>
         <div className="col-span-3">
           <span className="text-lg">ဆက်သွယ်ရန်</span>
           <div className="flex flex-col mt-8 gap-2">
-            <Link href={''}>ph no: 010-5926-5992</Link>
-            <Link href={''}>မေးလ်:mjvision5@gmial.com</Link>
-            <Link href={''}>ကိုယ်ရေးအချက်အလက်မူဝါဒ</Link>
-            <Link href={''}>T&C</Link>
+            <Link href={""}>ph no: 010-5926-5992</Link>
+            <Link href={""}>မေးလ်:mjvision5@gmial.com</Link>
+            <Link href={""}>ကိုယ်ရေးအချက်အလက်မူဝါဒ</Link>
+            <Link href={""}>T&C</Link>
           </div>
         </div>
         <div className="col-span-3">
           <span className="text-lg">Social</span>
           <div className="flex flex-col mt-8 gap-2">
-            <Link href={''}>Facebook</Link>
-            <Link href={''}>Youtube</Link>
-            <Link href={''}>Twitter</Link>
-            <Link href={''}>Telegram</Link>
+            <Link href={""}>Facebook</Link>
+            <Link href={""}>Youtube</Link>
+            <Link href={""}>Twitter</Link>
+            <Link href={""}>Telegram</Link>
           </div>
         </div>
       </div>
       <div className="mt-10">
-        <Link href={'/'}>
-          <Typography variant={'h4'} className="border-b-2">
+        <Link href={"/"}>
+          <Typography variant={"h4"} className="border-b-2">
             VISI<b className="text-[#f8532e]">ON</b>
           </Typography>
         </Link>
         <div className="flex justify-between items-center mt-1 w-[250px]">
           <Typography className="text-sm">College of Jeonju</Typography>
           <div
-            className={'h-4 bg-[#fff] w-[2px]'}
+            className={"h-4 bg-[#fff] w-[2px]"}
             role="separator"
             aria-orientation="vertical"
           />
@@ -76,5 +76,5 @@ export const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

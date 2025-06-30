@@ -1,28 +1,25 @@
-import { supabase } from '@/src/lib/supabaseClient'
-import { NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
+import mysql from "mysql2/promise";
 
-// Define a handler for GET requests
 export async function GET() {
   try {
-    // Fetch data from the 'departments' table
-    const { data, error } = await supabase.from('departments').select('*')
+    const connection = await mysql.createConnection({
+      host: process.env.MYSQL_HOST,
+      port: Number(process.env.MYSQL_PORT),
+      user: process.env.MYSQL_USER,
+      password: process.env.MYSQL_PASSWORD,
+      database: process.env.MYSQL_DATABASE,
+    });
 
-    // Handle errors from Supabase
-    if (error) {
-      console.error('Error fetching departments:', error)
-      return NextResponse.json(
-        { error: 'Failed to fetch departments' },
-        { status: 500 },
-      )
-    }
+    const [rows] = await connection.execute("SELECT * FROM departments");
+    await connection.end();
 
-    // Return the fetched data as JSON
-    return NextResponse.json(data, { status: 200 })
+    return NextResponse.json(rows, { status: 200 });
   } catch (error) {
-    console.error('Unexpected error:', error)
+    console.error("MySQL error:", error);
     return NextResponse.json(
-      { error: 'Internal Server Error' },
-      { status: 500 },
-    )
+      { error: "Failed to fetch departments" },
+      { status: 500 }
+    );
   }
 }
