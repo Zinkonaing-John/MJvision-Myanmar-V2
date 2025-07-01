@@ -5,31 +5,24 @@ import Link from "next/link";
 import { Typography } from "@mui/material";
 export const Footer = () => {
   return (
-    <div className="bg-slate-800 text-[#fff] px-8 py-10 w-full">
-      <div className="grid grid-cols-12 ">
-        <div className="col-span-4  flex flex-col gap-4">
+    <div className="bg-slate-800 text-[#fff] px-4 md:px-8 py-10 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0">
+        <div className="md:col-span-4 flex flex-col gap-4 max-w-xs w-full mx-auto md:mx-0">
           <span>အပ်ဒိတ်များကိုလက်ခံရရှိရန်</span>
-          <div
-            className="border-[1px] border-[#fff] rounded-md
-           p-2 w-[280px] flex justify-between items-center"
-          >
+          <div className="border-[1px] border-[#fff] rounded-md p-2 w-full flex justify-between items-center">
             <TextField
               id="standard-basic"
               label="သင့်အီးမေးလ်လိပ်စာကို ထည့်ပါ။"
               variant={"standard"}
-              className="w-[220px]"
+              className="w-full max-w-[180px]"
               color={"success"}
-              //   onChange={(e) => {
-              //     setMsg(e.target.value)
-              //     console.log(e.target.value)
-              //   }}
             />
             <Link href={"#"}>
               <ArrowForwardIcon />
             </Link>
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2 flex flex-col items-start max-w-xs w-full mx-auto md:mx-0">
           <span className="text-lg">အကြောင်းအရာများ</span>
           <div className="flex flex-col mt-8 gap-2">
             <Link href={"/"}>အိမ်</Link>
@@ -40,7 +33,7 @@ export const Footer = () => {
             <Link href={""}>သတင်းအချက်အလက်</Link>
           </div>
         </div>
-        <div className="col-span-3">
+        <div className="md:col-span-3 flex flex-col items-start max-w-xs w-full mx-auto md:mx-0">
           <span className="text-lg">ဆက်သွယ်ရန်</span>
           <div className="flex flex-col mt-8 gap-2">
             <Link href={""}>ph no: 010-5926-5992</Link>
@@ -49,7 +42,7 @@ export const Footer = () => {
             <Link href={""}>T&C</Link>
           </div>
         </div>
-        <div className="col-span-3">
+        <div className="md:col-span-3 flex flex-col items-start max-w-xs w-full mx-auto md:mx-0">
           <span className="text-lg">Social</span>
           <div className="flex flex-col mt-8 gap-2">
             <Link href={""}>Facebook</Link>
@@ -59,16 +52,16 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 text-center md:text-left">
         <Link href={"/"}>
           <Typography variant={"h4"} className="border-b-2">
             VISI<b className="text-[#f8532e]">ON</b>
           </Typography>
         </Link>
-        <div className="flex justify-between items-center mt-1 w-[250px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-1 w-full max-w-xs md:max-w-[250px] mx-auto md:mx-0">
           <Typography className="text-sm">College of Jeonju</Typography>
           <div
-            className={"h-4 bg-[#fff] w-[2px]"}
+            className={"h-4 bg-[#fff] w-[2px] my-2 md:my-0 md:mx-2"}
             role="separator"
             aria-orientation="vertical"
           />

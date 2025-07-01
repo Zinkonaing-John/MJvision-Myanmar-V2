@@ -14,30 +14,31 @@ export default function MediaCard({ img, title, paragraph }: Props) {
   return (
     <Card
       sx={{
-        width: 260,
-        height: 300,
+        width: 180,
+        height: 180,
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
       }}
     >
-      <CardMedia sx={{ height: 120 }} image={img} title={title} />
+      <CardMedia sx={{ height: 60 }} image={img} title={title} />
       <CardContent
         sx={{
           flex: 1,
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-start",
+          p: 1,
         }}
       >
         <Typography
           gutterBottom
-          variant="h6"
+          variant="subtitle2"
           component="div"
           sx={{
             fontWeight: 600,
-            fontSize: "1.1rem",
-            mb: 1,
+            fontSize: "0.9rem",
+            mb: 0.5,
             whiteSpace: "normal",
             wordBreak: "break-word",
           }}
@@ -48,6 +49,7 @@ export default function MediaCard({ img, title, paragraph }: Props) {
           variant="body2"
           sx={{
             color: "text.secondary",
+            fontSize: "0.75rem",
             whiteSpace: "normal",
             wordBreak: "break-word",
             overflow: "hidden",

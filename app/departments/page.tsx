@@ -223,9 +223,13 @@ export default async function Page() {
             </nav>
             {/* Cards grid */}
             <div className="flex-1">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-[5px] mx-auto justify-items-center">
                 {departments.map((dept) => (
-                  <div key={dept.id} id={`dept-${dept.id}`} className="p-4">
+                  <div
+                    key={dept.id}
+                    id={`dept-${dept.id}`}
+                    className="p-2 max-w-[160px] w-full mx-auto justify-items-center"
+                  >
                     <Link href={`/departments/${dept.id}`}>
                       <MediaCard
                         img={dept.img}
